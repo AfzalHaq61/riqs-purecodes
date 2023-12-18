@@ -1,0 +1,21 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .errors label {
+      @apply text-red-600;
+    }
+
+    .errors input {
+        @apply border-red-600;
+    }
+
+    .errors select {
+        @apply border-red-600;
+    }
+    .disabledSelectField {
+      @apply pointer-events-none;
+      @apply touch-none;
+    }
+  }
